@@ -1,9 +1,3 @@
-/*
-	Visualize by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 $(function() {
 
 	// Vars.
@@ -46,4 +40,9 @@ $(function() {
 
 		});
 
+});
+$('.scroll').click(function() {
+    $('body').animate({
+        scrollTop: eval($('#' + $(this).attr('target')).offset().top - 70)
+    }, 1000);
 });
